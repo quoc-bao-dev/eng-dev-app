@@ -81,6 +81,7 @@ export default {
                 900: "#7e1011",
                 950: "#44060a",
             },
+            white: "#fff",
         },
 
         extend: {},
