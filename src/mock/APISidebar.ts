@@ -1,0 +1,60 @@
+export const sidebarJSON = {
+    groupMenus: [
+        {
+            id: "sidebarMain",
+            key: "main",
+            title: "Main",
+            isShow: true,
+            order: 1,
+            menu: [
+                {
+                    id: "sidebarHome",
+                    key: "home",
+                    title: "Home",
+                    path: "/",
+                    icon: null,
+                    isShow: true,
+                    order: 1,
+                },
+                {
+                    id: "sidebarProfile",
+                    key: "profile",
+                    title: "Profile",
+                    path: "/profile",
+                    icon: null,
+                    isShow: true,
+                    order: 2,
+                },
+                {
+                    id: "sidebarSettings",
+                    key: "settings",
+                    title: "Settings",
+                    path: null,
+                    icon: null,
+                    isShow: true,
+                    order: 3,
+                    submenu: [
+                        {
+                            id: "sidebarGeneral",
+                            key: "general",
+                            title: "General",
+                            path: "/settings/general",
+                            icon: null,
+                            isShow: true,
+                            order: 1,
+                        },
+                        {
+                            id: "sidebarSecurity",
+                            key: "security",
+                            title: "Security",
+                            path: "/settings/security",
+                            icon: null,
+                            isShow: true,
+                            order: 2,
+                        },
+                    ],
+                },
+            ],
+        },
+    ],
+};

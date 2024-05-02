@@ -1,3 +1,5 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +7,63 @@
 /* module */
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
+}
+/* aimation */
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 12s linear infinite; /* Adjust duration to decrease speed */
+}
+
+@keyframes expandAnimation {
+    from {
+        height: 0;
+    }
+    to {
+        height: fit-content;
+    } /* Set desired expanded height */
+}
+
+.show-menu {
+    animation-name: expandAnimation;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.srollbar-width {
+    scrollbar-width: none;
+}
+
+html,
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }

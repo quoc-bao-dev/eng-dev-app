@@ -82,9 +82,26 @@ export default {
                 950: "#44060a",
             },
             white: "#fff",
+            red: {
+                50: "#fef3f2",
+                100: "#ffe3e1",
+                200: "#ffccc8",
+                300: "#ffa8a2",
+                400: "#fc776d",
+                500: "#f44336",
+                600: "#e22d20",
+                700: "#be2217",
+                800: "#9d2017",
+                900: "#82211a",
+                950: "#470c08",
+            },
         },
 
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Public Sans", "sans-serif"],
+            },
+        },
     },
     plugins: [],
 };

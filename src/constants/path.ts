@@ -1,6 +1,6 @@
 export enum path {
     INDEX = "/",
-    HOME = "/home",
+    HOME = "/",
     LOGIN = "/login",
     REGISTER = "/register",
     NOT_FOUND = "*",
