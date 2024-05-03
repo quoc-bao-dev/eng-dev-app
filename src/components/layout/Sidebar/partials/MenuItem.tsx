@@ -81,10 +81,12 @@ const MenuItem = ({
                 </div>
             </button>
             <ul
-                className={`flex flex-col gap-2 pt-2 overflow-hidden ${
-                    !isShowSidebar &&
-                    "absolute top-[50%]  translate-x-[-50%] left-[100%]"
-                } ${isOpen ? "h-fit" : "h-0"}`}
+                className={cn(
+                    `flex flex-col gap-2 pt-2 transition-all overflow-hidden ${
+                        !isShowSidebar &&
+                        "absolute top-[50%]  translate-x-[-50%] left-[100%]"
+                    } ${isOpen ? "h-fit" : "h-0"}`
+                )}
             >
                 {submenu?.map((item) => (
                     <SubmenuItem {...item} key={item.id} />

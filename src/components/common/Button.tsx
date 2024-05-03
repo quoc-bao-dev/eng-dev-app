@@ -18,7 +18,7 @@ export const Button = forwardRef<HTMLButtonElement, IButtonProps>(
                 "rounded-full": round,
                 "bg-white border-2 border-regent-gray-300 text-regent-gray-900 hover:bg-regent-gray-100":
                     variant === "white",
-                "bg-black text-white hover:bg-regent-gray-800":
+                "bg-black text-white hover:bg-regent-gray-950":
                     variant === "black",
                 "bg-success-500 text-white hover:bg-success-600":
                     variant === "success",

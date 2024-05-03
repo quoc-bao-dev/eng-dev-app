@@ -32,7 +32,7 @@ const GroupMenu = ({ isShow, id, menu, order, title }: IGroupMenuProps) => {
             <ul
                 //? refacetror animation
                 className={cn(
-                    `transition duration-1000 ease-in-out w-full ${
+                    `transition-all  w-full ${
                         isOpen ? "max-h-fit" : "max-h-0 h-0 opacity-0"
                     }`
                 )}

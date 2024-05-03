@@ -14,7 +14,7 @@ const HeaderButton = ({
     notification,
 }: IHeaderButtonProps) => {
     return (
-        <div className="relative hover:bg-regent-gray-200 hover:scale-110 rounded-full">
+        <div className="relative transition hover:bg-regent-gray-200 hover:scale-110 rounded-full">
             <button
                 onClick={onClick}
                 className=" w-10 h-10 rounded-full flex transition"
