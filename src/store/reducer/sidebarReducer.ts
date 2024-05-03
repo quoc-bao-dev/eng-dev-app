@@ -12,7 +12,7 @@ const initialState: ISidebarState = {
     isShowSidebar: true,
 };
 
-export const counterSlice = createSlice({
+export const sidebarSlice = createSlice({
     name: "sidebar",
     initialState,
     reducers: {
@@ -29,6 +29,6 @@ export const counterSlice = createSlice({
 });
 
 export const { setCurMenu, setCurLink, setIsShowSidebar } =
-    counterSlice.actions;
+    sidebarSlice.actions;
 
-export default counterSlice.reducer;
+export default sidebarSlice.reducer;

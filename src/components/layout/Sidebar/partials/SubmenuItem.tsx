@@ -6,7 +6,7 @@ import { ISubmenuItem } from "../model";
 
 interface ISubmenuItemProps extends ISubmenuItem {}
 const SubmenuItem = ({ icon, id, isShow, path, title }: ISubmenuItemProps) => {
-    const { currentLink } = useAppSelector((state) => state.sidebar);
+    const currentLink = useAppSelector((state) => state.sidebar.currentLink);
     const dispatch = useAppDispatch();
     if (!isShow) {
         return <></>;

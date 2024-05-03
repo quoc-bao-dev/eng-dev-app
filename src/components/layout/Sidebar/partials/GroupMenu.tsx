@@ -8,7 +8,9 @@ import { useAppSelector } from "../../../../store/store";
 interface IGroupMenuProps extends IGroupMenu {}
 const GroupMenu = ({ isShow, id, menu, order, title }: IGroupMenuProps) => {
     const [isOpen, setIsOpen] = useState(true);
-    const { isShowSidebar } = useAppSelector((state) => state.sidebar);
+    const isShowSidebar = useAppSelector(
+        (state) => state.sidebar.isShowSidebar
+    );
     const handleOpen = () => {
         setIsOpen(!isOpen);
     };

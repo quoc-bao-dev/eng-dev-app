@@ -82,6 +82,7 @@ export default {
                 950: "#44060a",
             },
             white: "#fff",
+            black: "#000",
             red: {
                 50: "#fef3f2",
                 100: "#ffe3e1",

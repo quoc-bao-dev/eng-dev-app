@@ -9,7 +9,9 @@ import GroupMenu from "./partials/GroupMenu";
 
 const Sidebar = () => {
     const dispatch = useAppDispatch();
-    const { isShowSidebar } = useAppSelector((state) => state.sidebar);
+    const isShowSidebar = useAppSelector(
+        (state) => state.sidebar.isShowSidebar
+    );
 
     const handleOpen = () => {
         dispatch(setIsShowSidebar());
@@ -45,8 +47,8 @@ const Sidebar = () => {
                     <GroupMenu {...item} key={item.id} />
                 ))}
             </ul>
-            <div className="rounded-lg bg-primary-100 bg-gradient-to-t from-primary-300 mt-auto p-4 h-[300px]">
-                <h2 className="text-primary-500 text-5xl font-bold">
+            <div className="rounded-lg bg-primary-100 bg-gradient-to-t from-primary-300 mt-auto p-4 h-[250px]">
+                <h2 className="text-primary-500 bg-clip-text tee text-5xl font-bold bg-gradient-to-tr from-primary-200 to-primary-600">
                     UPDATE TO PRO
                 </h2>
             </div>

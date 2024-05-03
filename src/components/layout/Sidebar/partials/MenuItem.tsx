@@ -15,15 +15,16 @@ const MenuItem = ({
     icon,
     isShow,
     id,
-    order,
     path,
     title,
     submenu,
 }: IMenuItemProps) => {
     const dispatch = useAppDispatch();
-    const { currentMenu, currentLink, isShowSidebar } = useAppSelector(
-        (state) => state.sidebar
+    const currentLink = useAppSelector((state) => state.sidebar.currentLink);
+    const isShowSidebar = useAppSelector(
+        (state) => state.sidebar.isShowSidebar
     );
+    const currentMenu = useAppSelector((state) => state.sidebar.currentMenu);
     const [isOpen, setIsOpen] = useState(true);
     const handleOpen = () => {
         setIsOpen(!isOpen);
